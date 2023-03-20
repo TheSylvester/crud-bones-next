@@ -1,0 +1,12 @@
+{
+  "name": "back-end-expressjs",
+  "version": "1.0.0",
+  "description": "Express REST API back-end boilerplate to serve as a reference for new projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sylvester Wong",
+  "license": "GPL-v3"
+}
