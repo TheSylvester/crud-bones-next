@@ -1,0 +1,14 @@
+PUT /data/641f5d1491b949e7c05f2f22 HTTP/1.1
+Host: localhost:3001
+Content-Type: application/json
+
+{
+  "text": "updated text",
+  "number": 456,
+  "boolean": false,
+  "stringsArray": [
+    "four",
+    "five",
+    "six"
+  ]
+}
