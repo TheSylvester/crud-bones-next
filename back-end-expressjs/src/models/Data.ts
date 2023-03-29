@@ -1,12 +1,5 @@
-import { Schema, model } from "mongoose";
-
-export interface IData {
-  _id?: string,
-  text: string,
-  number: number,
-  boolean: boolean,
-  stringsArray: Array<string>
-}
+import { model, Schema } from "mongoose";
+import { IData } from "../types/IData";
 
 const dataSchema: Schema<IData> = new Schema<IData>({
   text: String,

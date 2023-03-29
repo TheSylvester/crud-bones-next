@@ -1,8 +1,9 @@
 import express from "express";
-import dataModel, { IData } from "../models/Data";
+import dataModel from "../models/Data";
 import { createDataAccess } from "../database";
 import { createDataService } from "../services/dataService";
 import { createDataController } from "../controllers/dataController";
+import { IData } from "../types/IData";
 
 const router = express.Router();
 

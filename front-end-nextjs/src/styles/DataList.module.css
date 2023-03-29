@@ -1,0 +1,65 @@
+/* dataList */
+
+div.dataList {
+    display: grid;
+    grid-template-columns: minmax(max-content, 20rem) fit-content(25%) fit-content(25%) 1fr fit-content(25%);
+    border: 1px solid grey;
+}
+
+div.dataList div {
+    padding: 0.5rem 1rem;
+    border: 1px solid grey;
+}
+
+/* alternate row colors */
+.dataList > div:nth-child(10n+1),
+.dataList > div:nth-child(10n+2),
+.dataList > div:nth-child(10n+3),
+.dataList > div:nth-child(10n+4),
+.dataList > div:nth-child(10n+5) {
+    background-color: #f9f9f9;
+}
+
+/* header row */
+.dataList > div:nth-child(-n+5) {
+    background-color: lightgrey;
+    font-weight: bold;
+}
+
+/* strings array */
+.dataList > div > ul > li {
+    display: inline-block;
+}
+
+.dataList > div > ul > li::after {
+    content: ", ";
+    margin-right: 0.25rem;
+}
+
+.dataList > div > ul > li:last-child::after {
+    content: "";
+}
+
+/* action buttons */
+.dataList > div > button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border: 1px solid darkblue;
+    border-radius: 0.3rem;
+    /*background-color: cornflowerblue;*/
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button.dataList.primary {
+    background-color: cornflowerblue;
+}
+
+.dataList button.secondary {
+    background-color: orangered;
+}
+
+.dataList input {
+    width: 100%;
+}

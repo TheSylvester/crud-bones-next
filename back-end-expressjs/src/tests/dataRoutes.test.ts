@@ -4,8 +4,9 @@ dotenv.config({ path: `.env.local` });
 import express from "express";
 import dataRouter from "../routes/dataRoutes";
 import { connect, disconnect, createDataAccess } from "../database";
-import dataModel, { IData } from "../models/Data";
+import dataModel from "../models/Data";
 import request from "supertest";
+import { IData } from "../types/IData";
 
 const app = express();
 app.use(express.json());
